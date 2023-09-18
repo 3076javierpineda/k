@@ -1,0 +1,31 @@
+
+<div>
+  <h2>Ingresa el nombre de tu Pokemon</h2>
+  <input type="text" [(ngModel)]="name">
+  <button (click)="search()">Buscar</button>
+  
+  
+  <div id="base" *ngIf="pokemon" class="card" style="width: 18rem;">
+    <h3>ID: {{pokemon.id}}</h3>
+    <img src="{{urlImage}}" class="card-img-top" alt="foto pokemon">
+    <div class="card-body">
+      <h5 class="card-title text-danger">Nombre: {{ pokemon.name }}</h5>
+      <p class="card-text">Este pokemon tiene la siguientes habilidades:</p>
+      <ul>
+        <li *ngFor="let ability of pokemon.abilities">{{ ability.ability.name }}</li>
+      </ul>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Base experiencia: {{pokemon.base_experience}}</li>
+      <li class="list-group-item">Ataque: {{pokemon.stats[1].base_stat}} K</li>
+      <li class="list-group-item">Defensa: {{pokemon.stats[2].base_stat}} K</li>
+      <li class="list-group-item">Especial: {{pokemon.stats[3].base_stat}} K</li>
+    </ul>
+  </div>
+  
+</div>
+
+
+
+
+
