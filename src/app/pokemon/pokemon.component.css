@@ -1,6 +1,9 @@
-#base{
-    background-color: beige;
-    border: 3px solid black;
+.imgBase{
+    background-image: url(../../assets/fondo3.png);
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    
 }
 
 .containerHeader{
@@ -21,6 +24,8 @@
 .pokemonLogo{
     width: 80px !important;
     height: 80px !important;
-    
     filter: drop-shadow(0 0 0.75rem crimson);
+}
+#base{
+    background-color: #a6a6a6;
 }
