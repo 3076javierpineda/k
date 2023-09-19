@@ -2,3 +2,25 @@
     background-color: beige;
     border: 3px solid black;
 }
+
+.containerHeader{
+    background-color: #424242;
+    height:100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.pokeBallImg{
+    width:250px !important;
+    height:150px !important;
+    margin:0 auto;
+}
+
+.pokemonLogo{
+    width: 80px !important;
+    height: 80px !important;
+    
+    filter: drop-shadow(0 0 0.75rem crimson);
+}
